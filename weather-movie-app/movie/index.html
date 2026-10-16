@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Finder</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script type="module" src="script.js"></script>
+</head>
+<body>
+
+
+    <main class="movie-app">
+
+        <header class="app-header">
+            <p class="app-label">YOUR MOVIE GUIDE</p>
+
+            <h1>Find Your Next Movie</h1>
+
+            <p class="header-description">
+                Discover movies, explore ratings, and find something to watch.
+
+            </p>
+        </header>
+
+
+        <form class="movie-search" id="movie-search">
+            <input
+            type="text"
+            id="movie-input"
+            placeholder="Search for a movie..."
+            aria-label="Movie name"
+            required
+            >
+            <button type="submit">Search</button>
+        </form>
+
+        <p class="search-message" id="search-message" role="status"></p>
+
+        <section class="movie-results" id="movie-results">
+
+            <div class="welcome-message">
+
+                <h2>Find your next movie</h2>
+                <p>Search for a movie to explore its poster, release year, and rating.</p>
+            </div>
+        </section>
+
+    </main>
+</body>
+</html>

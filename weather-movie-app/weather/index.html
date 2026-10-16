@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <main class="weather-app">
+        <header class="app-header">
+            <h1>Weather Today</h1>
+
+            <p>Check the weather in your city</p>
+        </header>
+
+
+        <form class="city-search" id="city-search">
+            <input
+                type="text"
+                id="city-input"
+
+                placeholder="Enter city name"
+                aria-label="City name"
+                required
+            >
+            <button type="submit">Search</button>
+        </form>
+
+        <p id="message" role="status"></p>
+
+        <section class="weather-details" id="weather-details" hidden>
+            <h2 id="city-name"></h2>
+
+            <p id="weather-condition"></p>
+
+            <p id="temperature"></p>
+
+            <div class="weather-stats">
+                <div class="weather-stat">
+                    <h3>Humidity</h3>
+                    <p id="humidity"></p>
+
+                </div>
+
+                <div class="weather-stat">
+                    <h3>Wind Speed</h3>
+                    <p id="wind-speed"></p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+</body>
+</html>
